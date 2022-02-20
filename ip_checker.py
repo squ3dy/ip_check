@@ -25,7 +25,7 @@ class ip_checkerMod(loader.Module):
         response = urllib.request.urlopen("http://ipwhois.app/json/")
         ipgeolocation = json.load(response)
         requests = 10000 - int(ipgeolocation["completed_requests"])
-        await message.edit('remaining requests - ' + str(requests))
+        await message.edit('☘️ remaining requests - ' + str(requests))
 
 
     
